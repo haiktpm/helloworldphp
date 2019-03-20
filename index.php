@@ -3,6 +3,6 @@
   <title>PHP Test Hello</title>
  </head>
  <body>
- <?php echo getenv("Environment"); ?> 
+ <?php echo $_SERVER["Environment"]; ?> 
  </body>
 </html>

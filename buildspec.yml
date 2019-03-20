@@ -1,5 +1,11 @@
 version: 0.1
 phases:
+  pre_build:
+    commands:
+      - apt-get install php-pear
+      - pear channel-discover pear.phpunit.de
+      - pear channel-discover pear.symfony-project.com
+      - apt-get install phpunit
   build:
     commands:
       - phpunit tests

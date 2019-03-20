@@ -6,4 +6,4 @@ phases:
 artifacts:
  files:
   - '**/*'
- name: $Environment-$(date +%Y-%m-%d)
+ name: icy-$(date +%Y-%m-%d)

@@ -3,6 +3,6 @@
   <title>PHP Test Hello</title>
  </head>
  <body>
- <?php $envi = var_dump($_ENV['Environment']); echo '<p>Hello World environment: </p>'.$envi; ?> 
+ <?php echo '<p>Hello World environment: getenv("Environment") </p>'; ?> 
  </body>
 </html>

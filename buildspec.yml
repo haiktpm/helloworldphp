@@ -1,9 +1,9 @@
 version: 0.1
 phases:
- build:
+ pre_build:
   commands:
-      - echo "hello"
- artifacts:
-  files:
-    - '**/*'
-  name: icy-$(date +%Y-%m-%d)
+   - echo "hello"
+artifacts:
+ files:
+  - '**/*'
+ name: icy-$(date +%Y-%m-%d)

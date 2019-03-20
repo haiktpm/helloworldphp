@@ -3,7 +3,7 @@ phases:
  pre_build:
   commands:
    - echo "hello"
-   - echo $Environment
+   - export Environment="Testing"
 artifacts:
  files:
   - '**/*'

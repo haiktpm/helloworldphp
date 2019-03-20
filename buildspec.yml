@@ -3,6 +3,7 @@ phases:
  pre_build:
   commands:
    - echo "hello"
+   - echo "<html><body>$Environment</body></html>" > test.html
 artifacts:
  files:
   - '**/*'

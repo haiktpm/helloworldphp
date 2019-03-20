@@ -3,8 +3,7 @@ phases:
  pre_build:
   commands:
    - echo "hello"
-   - export Environment="Testing"
 artifacts:
  files:
   - '**/*'
- name: icy-$(date +%Y-%m-%d)
+ name: $Environment-$(date +%Y-%m-%d)

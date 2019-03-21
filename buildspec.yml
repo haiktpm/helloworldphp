@@ -2,8 +2,9 @@ version: 0.1
 phases:
  pre_build:
   commands:
-   - echo "hello"
-   - echo "<html><body>$Environment</body></html>" > test.html
+   - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   - php composer-setup.php
+   - mv composer.phar /usr/local/bin/composer
 artifacts:
  files:
   - '**/*'
